@@ -1,0 +1,169 @@
+Assignments:-
+1.	List the contents of a directory and their attributes
+Ls
+
+2.	Long list the content with file, directory ownership, permissions,sizes, etc…
+Ls -l
+3.	Display the size of the file in human readable format
+Ls -h
+4.	Show all files and folders including hidden one
+Ls -a
+5.	list directories recursively
+ls -R
+6.	Sort the files by size with largest at the top
+Ls –laS
+
+Dell@DESKTOP-P3UJBKH MINGW64 ~
+$ ls -lahS
+total 6.6M
+-rw-r--r-- 1 Dell 197121 4.3M Jun  3 15:26  NTUSER.DAT
+-rw-r--r-- 1 Dell 197121 1.2M Jun  2 17:05  ntuser.dat.LOG2
+-rw-r--r-- 1 Dell 197121 512K Jun  2 17:05  NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 Dell 197121 512K Jun  2 17:05  NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+-rw-r--r-- 1 Dell 197121 128K Jun  2 17:05  ntuser.dat.LOG1
+-rw-r--r-- 1 Dell 197121  64K Jun  2 17:06  NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+lrwxrwxrwx 1 Dell 197121   65 Jun  2 17:05  NetHood -> '/c/Users/Dell/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+lrwxrwxrwx 1 Dell 197121   65 Jun  2 17:05  PrintHood -> '/c/Users/Dell/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 Dell 197121   58 Jun  2 17:05 'Start Menu' -> '/c/Users/Dell/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 Dell 197121   57 Jun  2 17:05  Cookies -> /c/Users/Dell/AppData/Local/Microsoft/Windows/INetCookies/
+lrwxrwxrwx 1 Dell 197121   57 Jun  2 17:05  Templates -> /c/Users/Dell/AppData/Roaming/Microsoft/Windows/Templates/
+lrwxrwxrwx 1 Dell 197121   54 Jun  2 17:05  Recent -> /c/Users/Dell/AppData/Roaming/Microsoft/Windows/Recent/
+lrwxrwxrwx 1 Dell 197121   54 Jun  2 17:05  SendTo -> /c/Users/Dell/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 Dell 197121   29 Jun  2 17:05 'Application Data' -> /c/Users/Dell/AppData/Roaming/
+lrwxrwxrwx 1 Dell 197121   27 Jun  2 17:05 'Local Settings' -> /c/Users/Dell/AppData/Local/
+lrwxrwxrwx 1 Dell 197121   23 Jun  2 17:05 'My Documents' -> /c/Users/Dell/Documents/
+-rw-r--r-- 1 Dell 197121   20 Jun  2 17:52  ntuser.ini
+drwxr-xr-x 1 Dell 197121    0 Jun  2 17:52  ./
+drwxr-xr-x 1 Dell 197121    0 Jun  2 17:05  ../
+drwxr-xr-x 1 Dell 197121    0 Jun  2 17:53 '3D Objects'/
+drwxr-xr-x 1 Dell 197121    0 Jun  2 17:35  AppData/
+drwxr-xr-x 1 Dell 197121    0 Jun  2 17:53  Contacts/
+
+
+7.	Sort the files by last time modified displaying the newest first.
+Ls -ltr
+8.	Diplay the location of a program/command, where it is installed.
+9.	Which command is used to switch directory from one to another
+cd
+10.	List all the environment variables set for the current shell environment
+printenv
+11.	Did you notice something in the output of "env" command?
+12.	Which command is used to print the text or any variables value in the Console/Terminal?
+13.	Print the value of the env variable "PATH" on the console
+14.	Is linux a case-sensitive operating system?
+yes
+15.	Is, "Ls" same as "ls"?
+Yes	
+16.	Display your currently logged in user
+whoami
+17.	how do you change the currrently logged in user to another user?
+18.	Which command is used to leave a shell environment that you are currently logged in to?
+19.	How do you reboot the system?
+20.	How do you shutdown the system?
+21.	Display all the major running processes in the system
+Ps
+22.	Understand the output of command used in above question of displaying processes, explain the meaning of each column and what data it displays?
+Dell@DESKTOP-P3UJBKH MINGW64 /c/Drivers
+$ ps
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+      742       1     742      11812  ?         197609 15:54:12 /usr/bin/mintty
+     1098     743    1098      13268  pty0      197609 22:42:42 /usr/bin/ps
+      743     742     743       6508  pty0      197609 15:54:15 /usr/bin/bash
+
+23.	Display the name of the system kernel
+24.	display the kernel release number
+25.	display teh machine type of the current kernel
+26.	Display the name of the operating system that the kernel is running on
+27.	Display all info that uname command can show.
+Uname displays the system information .
+28.	Display the name of directory that you are currently pointing to
+pwd
+29.	change the current directory to another directory that you have in your system.
+30.	Go up one directory
+cd..
+31.	Return to last directory
+Cd -
+32.	change the current directory to home(logged in user's) directory
+cd ~
+33.	How to check all the command used from the prompt (Command History)
+history
+34.	In which file the history of commands are stored in?
+35.	How many lines of history does the system keep and from where you can change it?
+1000
+36.	How can you modify bash's history behaviour
+37.	Display all the commands entered so far, now, try to run a particular command from the history list without typing that command.
+History command to list all the executed commands
+!-n to execute the command n commands back
+  
+Dell@DESKTOP-P3UJBKH MINGW64 ~
+$ history
+    1  ls
+    2  ls -a
+    3  ls -lh
+    4  ls -l
+    5  ls -laS
+    6  ls -r
+    7  ls -lr
+    8  ls -l
+    9  ls -lahS
+   10  ls -lth
+   11  ls -ltr
+   12  find AWS
+   13  find videos
+   14  history
+   15  history 3
+   16  cd ..
+   17  cd ..
+   18  ~
+   19  cd
+   20  pwd
+   21  cd~
+   22  cd ~
+   23  pwd
+   24  cd ..
+   25  cd ~
+   26  pwd
+   27  ls -ltr
+   28  ls -latr
+   29  search .bash_hoistory
+   30  find .bash_hoistory
+   31  pws
+   32  pwd
+   33  find home
+   34  cd ..
+   35  ls -latr
+   36  cd ~
+   37  ls -ltr
+   38  print env
+   39  printenv
+   40  Ls
+   41  ls
+   42  who
+   43  user
+   44  w
+   45  whoami
+   46  who
+   47  ps
+   48  history
+   49  who
+   50  user
+   51  ls -laS
+   52  history
+   53  who
+   54  history
+   55  who
+   56  who
+   57  history
+   58  clear
+   59  ps
+   60  history
+
+Dell@DESKTOP-P3UJBKH MINGW64 ~
+$ !-2
+ps
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+      742       1     742      11812  ?         197609 15:54:12 /usr/bin/mintty
+      991     743     991      10700  pty0      197609 22:25:17 /usr/bin/ps
+      743     742     743       6508  pty0      197609 15:54:15 /usr/bin/bash
+
+
